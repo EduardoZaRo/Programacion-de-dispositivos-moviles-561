@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="310dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_marginTop="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/opciones_tarea"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:lottie_imageAssetsFolder="assets"
+        app:lottie_fileName="opciones_dialogo.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"/>
+    <Button
+        app:icon = "@drawable/icono_eliminar"
+        android:layout_gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_eliminar_tarea"
+        android:id="@+id/btn_eliminar_tarea"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins"/>
+    <Button
+        app:icon = "@drawable/icono_compartir"
+        android:layout_gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_compartir_tarea"
+        android:id="@+id/btn_compartir_tarea"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
